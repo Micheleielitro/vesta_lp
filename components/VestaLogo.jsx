@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import BASE_PATH from '../lib/basePath'
 
 export default function VestaLogo({ height = 36 }) {
   return (
@@ -9,13 +9,11 @@ export default function VestaLogo({ height = 36 }) {
       display: 'inline-flex',
       alignItems: 'center',
     }}>
-      <Image
-        src="/logo.png"
+      <img
+        src={`${BASE_PATH}/logo.png`}
         alt="Vesta"
         height={height}
-        width={height * 2.8}
-        style={{ objectFit: 'contain', display: 'block' }}
-        priority
+        style={{ objectFit: 'contain', display: 'block', width: 'auto' }}
       />
     </div>
   )

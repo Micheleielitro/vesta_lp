@@ -2,7 +2,7 @@
 const nextConfig = {
   output: 'export',
   basePath: '/vesta_lp',
-  assetPrefix: '/vesta_lp/',
+  assetPrefix: '/vesta_lp',
   images: {
     unoptimized: true,
   },

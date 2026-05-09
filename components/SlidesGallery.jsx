@@ -2,18 +2,19 @@
 
 import { useState, useRef, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import BASE_PATH from '../lib/basePath'
 
 const SLIDES = [
-  { src: '/slides/slide-01.jpg', caption: 'Quante email hai per i tuoi acquisti?' },
-  { src: '/slides/slide-02.jpg', caption: 'Prima / Dopo' },
-  { src: '/slides/slide-03.jpg', caption: "L'AI di Vesta lavora per te" },
-  { src: '/slides/slide-04.jpg', caption: 'Prezzi intelligenti' },
-  { src: '/slides/slide-05.jpg', caption: 'Recensioni semplificate' },
-  { src: '/slides/slide-06.jpg', caption: 'La pubblicità non ti intasa più l\'email' },
-  { src: '/slides/slide-07.jpg', caption: 'Resi e problemi? Ci pensa Vesta' },
-  { src: '/slides/slide-08.jpg', caption: 'Coupon sempre a portata di mano' },
-  { src: '/slides/slide-09.jpg', caption: 'Il regalo perfetto esiste' },
-  { src: '/slides/slide-10.jpg', caption: 'Un solo account per tutto l\'e-commerce' },
+  { src: `${BASE_PATH}/slides/slide-01.jpg`, caption: 'Quante email hai per i tuoi acquisti?' },
+  { src: `${BASE_PATH}/slides/slide-02.jpg`, caption: 'Prima / Dopo' },
+  { src: `${BASE_PATH}/slides/slide-03.jpg`, caption: "L'AI di Vesta lavora per te" },
+  { src: `${BASE_PATH}/slides/slide-04.jpg`, caption: 'Prezzi intelligenti' },
+  { src: `${BASE_PATH}/slides/slide-05.jpg`, caption: 'Recensioni semplificate' },
+  { src: `${BASE_PATH}/slides/slide-06.jpg`, caption: "La pubblicità non ti intasa più l'email" },
+  { src: `${BASE_PATH}/slides/slide-07.jpg`, caption: 'Resi e problemi? Ci pensa Vesta' },
+  { src: `${BASE_PATH}/slides/slide-08.jpg`, caption: 'Coupon sempre a portata di mano' },
+  { src: `${BASE_PATH}/slides/slide-09.jpg`, caption: 'Il regalo perfetto esiste' },
+  { src: `${BASE_PATH}/slides/slide-10.jpg`, caption: "Un solo account per tutto l'e-commerce" },
 ]
 
 export default function SlidesGallery() {
