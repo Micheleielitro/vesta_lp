@@ -43,7 +43,7 @@ function EmailVisual() {
         <div className="ve-addr">
           <span className="u">marco</span>
           <span className="a">@</span>
-          <span className="d">vesta.app</span>
+          <span className="d">vestamail.it</span>
           <span className="cursor-blink" />
         </div>
       </div>

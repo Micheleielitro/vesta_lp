@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import VestaLogo from './VestaLogo'
+import EmailGenerator from './EmailGenerator'
 
 const ease = [0.16, 1, 0.3, 1]
 
@@ -42,8 +43,8 @@ export default function Hero({ onStart }) {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.65, delay: 0.34, ease }}
       >
-        Vesta ti assegna un indirizzo email dedicato. Usalo su Amazon, Shein,
-        Zalando — e traccia tutto per te, automaticamente.
+        Vesta ti assegna un indirizzo <strong>@vestamail.it</strong> dedicato.
+        Usalo su Amazon, Shein, Zalando — e traccia tutto automaticamente.
       </motion.p>
 
       <motion.div
@@ -58,25 +59,14 @@ export default function Hero({ onStart }) {
             <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </button>
-        <button className="btn-ghost">Vai all'app</button>
       </motion.div>
 
       <motion.div
-        className="email-preview"
         initial={{ opacity: 0, y: 32, scale: 0.97 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ duration: 0.85, delay: 0.58, ease }}
       >
-        <div className="email-preview-label">La tua Vesta Mail</div>
-        <div className="email-preview-address">
-          <span className="ep-name">marco</span>
-          <span className="ep-at">@</span>
-          <span className="ep-domain">vesta.app</span>
-        </div>
-        <div className="email-preview-status">
-          <div className="status-dot" />
-          Attivo e in ascolto
-        </div>
+        <EmailGenerator />
       </motion.div>
     </section>
   )
