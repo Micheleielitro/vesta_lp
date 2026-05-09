@@ -160,7 +160,7 @@ export default function OnboardingWizard() {
   return (
     <section className="wizard-section" id="wizard">
       <div className="wizard-header" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-        <div className="section-badge">4</div>
+        <div className="section-badge">5</div>
         <h2 className="section-title">
           Come funziona <span className="accent">Vesta</span>
         </h2>
@@ -250,11 +250,24 @@ export default function OnboardingWizard() {
                   </button>
                 ) : (
                   <div className="cta-stack">
-                    <a href="http://localhost:3000" className="btn-cta-primary">
-                      Apri Vesta
-                    </a>
-                    <button className="btn-cta-secondary">
-                      Unisciti alla waitlist
+                    <button
+                      className="btn-cta-primary"
+                      onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                    >
+                      ✉️ Crea la tua Vesta Mail
+                    </button>
+                    <button
+                      className="btn-cta-secondary"
+                      onClick={() => {
+                        if (navigator.share) {
+                          navigator.share({ title: 'Vesta', text: 'Scopri Vesta — il tuo assistente shopping AI con email dedicata @vestamail.it', url: window.location.href })
+                        } else {
+                          navigator.clipboard.writeText(window.location.href)
+                          alert('Link copiato!')
+                        }
+                      }}
+                    >
+                      Condividi Vesta 🚀
                     </button>
                   </div>
                 )}

@@ -40,7 +40,7 @@ export default function SlidesGallery() {
   return (
     <section className="gallery-section">
       <div style={{ textAlign: 'center', marginBottom: 48, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-        <div className="section-badge">5</div>
+        <div className="section-badge">4</div>
         <h2 className="section-title">
           Tutto quello che <span className="accent">Vesta fa</span>
         </h2>
