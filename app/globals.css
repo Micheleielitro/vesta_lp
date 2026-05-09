@@ -288,17 +288,36 @@ body {
   margin: 0 auto;
 }
 
-.section-badge {
-  display: inline-flex;
+.section-divider {
+  display: flex;
   align-items: center;
-  gap: 8px;
-  background: var(--purple-badge);
-  color: var(--white);
-  font-size: 13px;
-  font-weight: 800;
-  padding: 5px 14px;
-  border-radius: 8px;
-  margin-bottom: 32px;
+  justify-content: center;
+  gap: 14px;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto 32px;
+}
+
+.section-divider::before,
+.section-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(124, 58, 237, 0.5));
+}
+
+.section-divider::after {
+  background: linear-gradient(to left, transparent, rgba(124, 58, 237, 0.5));
+}
+
+.section-divider-gem {
+  width: 8px;
+  height: 8px;
+  background: var(--purple-light);
+  border-radius: 2px;
+  transform: rotate(45deg);
+  box-shadow: 0 0 10px var(--purple), 0 0 22px rgba(124, 58, 237, 0.45);
+  flex-shrink: 0;
 }
 
 .primadopo-grid {

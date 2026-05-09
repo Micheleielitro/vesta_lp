@@ -160,7 +160,7 @@ export default function OnboardingWizard() {
   return (
     <section className="wizard-section" id="wizard">
       <div className="wizard-header" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-        <div className="section-badge">5</div>
+        <div className="section-divider"><div className="section-divider-gem" /></div>
         <h2 className="section-title">
           Come funziona <span className="accent">Vesta</span>
         </h2>

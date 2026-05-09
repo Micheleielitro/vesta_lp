@@ -19,7 +19,7 @@ function PrimaDopo() {
         transition={{ duration: 0.7, ease }}
       >
         <div style={{ textAlign: 'center', marginBottom: 48 }}>
-          <div className="section-badge">2</div>
+          <div className="section-divider"><div className="section-divider-gem" /></div>
           <h2 className="section-title">
             Prima <span className="accent">/ Dopo</span>
           </h2>
@@ -73,7 +73,7 @@ function Features() {
   return (
     <section className="features-section">
       <div style={{ textAlign: 'center', marginBottom: 48 }}>
-        <div className="section-badge">3</div>
+        <div className="section-divider"><div className="section-divider-gem" /></div>
         <h2 className="section-title">
           Cosa fa <span className="accent">Vesta</span>
         </h2>
