@@ -29,9 +29,9 @@ const STEPS = [
   {
     step: '04 / 04',
     title: 'Sei\npronto!',
-    subtitle: 'Benvenuto su Vesta',
+    subtitle: 'Presto disponibile',
     description:
-      "Hai capito come funziona. Registrati ora e inizia a tenere tutto il tuo shopping sotto controllo — senza nessuno sforzo.",
+      "Vesta sta arrivando. Crea la tua Vesta Mail ora — così il giorno del lancio sei già pronto, con tutto configurato.",
   },
 ]
 
