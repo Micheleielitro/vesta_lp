@@ -31,7 +31,7 @@ const STEPS = [
     title: 'Stiamo\narrivando.',
     subtitle: 'Presto disponibile',
     description:
-      "Vesta è in arrivo. Stiamo costruendo qualcosa di grande — sei già tra i primi a scoprirla. Condividila con chi vuoi bene.",
+      "Vesta è in arrivo. Stiamo costruendo qualcosa di grande. Sei già tra i primi a scoprirla. Condividila con chi vuoi bene.",
   },
 ]
 
