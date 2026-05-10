@@ -28,10 +28,10 @@ const STEPS = [
   },
   {
     step: '04 / 04',
-    title: 'Sei\npronto!',
+    title: 'Stiamo\narrivando.',
     subtitle: 'Presto disponibile',
     description:
-      "Vesta sta arrivando. Crea la tua Vesta Mail ora — così il giorno del lancio sei già pronto, con tutto configurato.",
+      "Vesta è in arrivo. Stiamo costruendo qualcosa di grande — sei già tra i primi a scoprirla. Condividila con chi vuoi bene.",
   },
 ]
 
